@@ -6,7 +6,7 @@
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(9600); // 괄호 안은 속도를 의미
   pinMode(led_g, OUTPUT);
   pinMode(led_r, OUTPUT);
   pinMode(TRIG, OUTPUT);
