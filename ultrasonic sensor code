@@ -1,6 +1,7 @@
 // C++ code
 //
-
+int led_g=8;
+int led_r=7;
 #define TRIG 13 //TRIC 핀
 #define ECHO 12 //ECHO 핀
 
