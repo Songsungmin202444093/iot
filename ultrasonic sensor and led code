@@ -42,4 +42,6 @@ void loop()
     digitalWrite(led_r, LOW);
     digitalWrite(led_g, HIGH);
   }
+
+  delay(1000);
 }
