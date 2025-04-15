@@ -1,13 +1,13 @@
 #include "LedToggle.h"
 
 LedToggle::LedToggle(int pin) {
-	_pin = pin();
+	_pin = pin;
 	_state = false;
 	pinMode(_pin, OUTPUT);
-	digitalWrite(_pin, NOW);
+	digitalWrite(_pin, LOW);
 } 
 
 void LedToggle::toggle() {
 	_state = !_state;
-	deigitalWrite(_pin, _state ? HIGH : LOW);
+	digitalWrite(_pin, _state ? HIGH : LOW);
 }
