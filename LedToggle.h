@@ -6,11 +6,13 @@
 class LedToggle {
 public:
 	LedToggle(int pin);
+	LedToggle(int pin, unsigned long delayTime)
 	void toggle();
 	
 private:
 	int _pin;
 	bool _state;	
+	unsigned long delayTime
 };
 
 #endif
